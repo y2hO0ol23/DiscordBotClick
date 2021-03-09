@@ -1,0 +1,12 @@
+{
+    "emoji" : {"click" : "👆","erase" : "❌","next" : "➡", "back" : "⬅","reload" : "🔄"},
+    "message" : {
+        "click" : "클릭하세요**! >> Count : ",
+        "leaderboard" : "리더보드",
+        "link" : "https://discord.com/api/oauth2/authorize?client_id=815675245720502304&permissions=10240&scope=bot",
+        "backup" : "``백업완료``",
+        "description" : "> **주의! 너무 빠르게 클릭하면\n> 디스코드가 당신을 밴할지도 모릅니다!**\n\n**Click!** with ",
+        "randomBox" : "**랜덤박스!** [",
+        "randomBoxMoved" : "``지금부터 이곳에 랜덤박스 메시지가 생깁니다``"
+    } 
+}

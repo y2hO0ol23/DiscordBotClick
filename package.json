@@ -5,5 +5,9 @@
   "main": "Click.js",
   "scripts": {
     "ds_click": "node Click.js"
+  },
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "shelljs": "^0.8.4"
   }
 }
