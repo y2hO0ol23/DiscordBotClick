@@ -14,7 +14,7 @@ module.exports = {
         else if(msg_data === "백업"){ answer.backup(msg); }
         else if(msg_data === "랜덤박스"){ answer.setRandomBoxChannel(msg); }
         else if(msg_data * 1 === serial){ serial.input(msg); }
-        else if(msg_data === "serial"){ serial.get(); }
+        else if(msg_data === "serial"){ serial.get(msg); }
     },
     mention: function(msg){
         let msg_string = msg.content + "";
@@ -74,7 +74,7 @@ const answer = {
     backup: function(msg){
         let server_list
         if(msg.channel.type === 'text') msg.delete();
-        try{server_list = require('./data/list.json');}
+        try{server_list = require('../data/list.json');}
         catch(err) {return;}
         let path = './data/list_backup.json';
         setFile.save(path,server_list);
@@ -87,7 +87,7 @@ const answer = {
             msg.channel.send("``서버에서만 사용할 수 있는 기능입니다``");
             return;
         }
-        server_list = require('./data/list.json');
+        server_list = require('../data/list.json');
         let pos = server.pos(server_list,msg.guild);
         try{
             msg.channel.send(botStr.message.randomBoxMoved);
